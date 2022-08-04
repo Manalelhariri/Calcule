@@ -1,0 +1,46 @@
+#include <stdio.h>
+float main ()
+{
+    float nb1 , nb2;   
+    char  t ;
+ printf("operation :\n "); 
+   scanf(" %c" , &t );   
+while (t != 'q'){
+   printf("nb1=");
+   scanf("%f", &nb1);
+   printf("nb2=");
+   scanf("%f" , &nb2 );
+  switch(t)
+    {
+      
+ case '+' : 
+printf("resultat = %f\n" , nb1 + nb2 );
+ break ;
+
+ case '-' :
+ printf("resultat = %f\n" , nb1 - nb2 );
+ break ; 
+
+
+ case '*' :
+ printf("resultat = %f\n" , nb1 * nb2 );
+  break;
+  
+ case '/' :
+ if (nb2 != 0)
+     {
+ printf("resultat = %f\n" , nb1 / nb2  );
+     }
+  else
+   {printf("ERROR \n");}
+   break ;
+   
+   case 'q' :
+    printf(" \n");
+ break;
+ }
+printf("Entrer une operation\n");
+scanf(" %c", &t);
+}
+
+ }
